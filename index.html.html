@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estudio de Mercado | Juan Valdez</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="hero">
+    <h1>☕ Estudio de Mercado</h1>
+    <p>Tinto Americano - Juan Valdez</p>
+    <button onclick="scrollToSection('insight')">Ver análisis</button>
+</header>
+
+<nav>
+    <a href="#insight">Insight</a>
+    <a href="#publico">Público</a>
+    <a href="#graficas">Datos</a>
+    <a href="#estrategia">Estrategia</a>
+</nav>
+
+<section id="insight" class="section">
+    <h2>Insight Clave</h2>
+    <div class="highlight">
+        El mayor consumo ocurre en la mañana (6–10 AM) en personas activas.
+    </div>
+</section>
+
+<section id="publico" class="section dark">
+    <h2>Público Objetivo</h2>
+    <div class="cards">
+        <div class="card">Padres</div>
+        <div class="card">Profesores</div>
+        <div class="card">Estudiantes</div>
+        <div class="card">Conductores</div>
+    </div>
+</section>
+
+<section id="graficas" class="section">
+    <h2>Análisis de Consumo</h2>
+    <canvas id="consumoChart"></canvas>
+
+    <h2>Consumo por Estrato</h2>
+    <canvas id="estratoChart"></canvas>
+</section>
+
+<section id="estrategia" class="section dark">
+    <h2>Estrategia Recomendada</h2>
+    <div class="cards">
+        <div class="card">Promoción mañanera</div>
+        <div class="card">Apps</div>
+        <div class="card">Oficinas</div>
+        <div class="card">Suscripciones</div>
+    </div>
+</section>
+
+<footer>
+    <p>Proyecto académico | 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
